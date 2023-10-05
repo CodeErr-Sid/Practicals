@@ -1,0 +1,22 @@
+5. Single Dimensional Array:
+
+Source Code:
+
+using System;
+
+class Program {
+  public static void Main (string[] args) {
+
+        string[] weekDays;
+
+        weekDays = new string[] {"Sun", "Mon", "Tue", "Wed", 
+                                       "Thu", "Fri", "Sat"};
+
+        foreach(string day in weekDays)
+            Console.Write(day + " ");
+  }
+}
+
+Output:
+
+Sun Mon Tue Wed Thu Fri Sat
