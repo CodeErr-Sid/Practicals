@@ -1,0 +1,22 @@
+6. Boxing And UnBoxing:
+
+Source Code:
+
+using System;
+
+class Program {
+  public static void Main (string[] args) {
+        int num = 10;
+        object obj = num;
+
+        num = 100;
+ 
+        System.Console.WriteLine("Value - type value of num is : {0}", num);
+        System.Console.WriteLine("Object - type value of obj is : {0}", obj);
+  }
+}
+
+Output:
+
+Value - type value of num is : 100
+Object - type value of obj is : 10
