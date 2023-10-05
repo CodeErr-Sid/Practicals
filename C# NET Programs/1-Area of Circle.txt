@@ -1,0 +1,21 @@
+1.Area Of The Circle
+
+Source Code:
+
+using System; 
+class Circle 
+{ 
+    static void Main(string[] args) 
+    { 
+        Console.Write("Enter Radius: "); 
+        double rad = Convert.ToDouble(Console.ReadLine()); 
+        double area = Math.PI * rad * rad; 
+        Console.WriteLine("Area of circle is: " + area); 
+    } 
+}
+
+
+Output:
+
+Enter Radius: 6
+Area of circle is: 113.097335529233
