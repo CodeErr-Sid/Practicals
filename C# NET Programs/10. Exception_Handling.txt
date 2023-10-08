@@ -1,0 +1,20 @@
+10. Exception Handling
+
+Source Code:
+using System;
+
+class Program {
+  public static void Main (string[] args) {
+    string[] colors = { "Red", "Blue", "Green" };
+      try{ 
+            Console.WriteLine(colors[5]);
+         }
+      catch (IndexOutOfRangeException e){
+            Console.WriteLine("An exception occurred: " +e.Message);
+        }
+  }
+}
+
+Output:
+
+An exception occurred: Index was outside the bounds of the array.
