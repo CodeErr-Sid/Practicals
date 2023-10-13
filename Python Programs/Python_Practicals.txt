@@ -1,0 +1,135 @@
+# 1.Basic Control Structure & Loops
+
+num = int(input("Enter Any +ve Integer: "))
+rev=0
+while(num>0):
+    digit = num%10
+    rev = (rev*10) + digit
+    num = num//10
+print(f"Reverse Of The Number: {rev}")
+
+Output:
+Enter Any +ve Integer: 123
+Reverse Of The Number: 321
+
+
+# 2. Operators & IO Operations
+
+age = int(input("Enter Your Age: "))
+if(age>18):
+    print("You Are Eligible To Vote!")
+else:
+    print("You Are Not Eligible To Vote.")
+
+Output:
+Enter Your Age: 19
+You Are Eligible To Vote!
+
+
+# 3. Python Scripts
+
+num = int(input("Enter Any Number: "))
+rev=0
+temp=num
+while(num>0):
+    digit = num%10
+    rev = (rev*10)+digit
+    num = num//10
+if(rev==temp):
+    print("Palindrome")
+else:
+    print("Not a Palindrome")
+
+Output:
+Enter Any Number: 343
+Palindrome
+
+
+# 4.Lists
+
+marks = [90, 88, 79, 100, 85]
+sum = sum(marks)
+avg = sum / len(marks)
+max_mark = max(marks)
+min_mark = min(marks)
+print(f"Average Score is: {avg}")
+print(f"Your Highest score is: {max_mark} \nLowest Score is: {min_mark}")
+
+Output:
+Average Score is: 88.4
+Your Highest score is: 100 
+Lowest Score is: 79
+
+
+# 5.String
+
+str1 = input("Enter First String: ")
+str2 = input("Enter Second String: ")
+concat = str1+str2
+l1 = len(str1)
+l2 = len(str2)
+start_with_t = str1.startswith('t')
+strip = concat.strip()
+upper_case = concat.upper()
+print(f"Concatenated String: {concat}")
+print(f"length of string 1: {l1}")
+print(f"length of string 2: {l2}")
+print(f"starts with t ?: {start_with_t}")
+print(f"Upper case : {upper_case}")
+
+Output:
+Enter First String: im
+Enter Second String: happy
+Concatenated String: imhappy
+length of string 1: 2
+length of string 2: 5
+starts with t ?: False
+Upper case : IMHAPPY
+
+
+# 6.functions
+
+a = int(input("Enter 1st Number: "))
+b = int(input("Enter 2nd Number: "))
+c = int(input("Enter 3rd Number: "))
+def Find_max(a,b,c):
+    if a>b and a>c:
+        return a
+    elif b>a and b>c:
+        return b
+    else:
+        return c
+max_num = Find_max(a,b,c)
+print(f"Maximum Of The Three Numbers is: {max_num}")
+
+Output:
+Enter 1st Number: 3
+Enter 2nd Number: 4
+Enter 3rd Number: 5
+Maximum Of The Three Numbers is: 5
+
+
+# 7.Recursion & Parameter Passing
+
+def fibo(n):
+    if n<=1:
+        return n
+    else:
+        return(fibo(n-1)+fibo(n-2))
+nterms = int(input("How Many Terms? - "))
+if nterms<=0:4
+    print("Enter Positive Integer!")
+else:
+    print("Fibonacci Series: \n")
+    for i in range(nterms):
+        print(fibo(i))
+
+Output:
+How Many Terms? - 5
+Fibonacci Series: 
+0
+1
+1
+2
+3
+
