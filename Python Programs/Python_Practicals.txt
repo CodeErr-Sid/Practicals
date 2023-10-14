@@ -117,7 +117,7 @@ def fibo(n):
     else:
         return(fibo(n-1)+fibo(n-2))
 nterms = int(input("How Many Terms? - "))
-if nterms<=0:4
+if nterms<=0:
     print("Enter Positive Integer!")
 else:
     print("Fibonacci Series: \n")
