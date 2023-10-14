@@ -144,3 +144,32 @@ print(f"Even Tuple: {even_tuple}")
 Output:
 Odd Tuple: [2, 4, 6, 8, 10]
 Even Tuple: [1, 3, 5, 7, 9]
+
+
+# 9. Files
+
+with open("new_file.txt", 'w') as file:
+    file.write("Writing To The File")
+
+with open("new_file.txt", 'r') as file:
+    data = file.readlines()
+    for line in data:
+        word = line.split()
+    print(word)
+
+Output:
+['Writing', 'To', 'The', 'File']
+
+
+# 10. Exception Handling
+
+x = 5
+y = "hello"
+try:
+    z = x + y
+except TypeError:
+    print("Error: cannot add an int and a str")
+
+Output:
+Error: cannot add an int and a str
+
