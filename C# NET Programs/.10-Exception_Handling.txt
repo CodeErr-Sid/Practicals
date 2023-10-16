@@ -12,6 +12,7 @@ class Program {
       catch (IndexOutOfRangeException e){
             Console.WriteLine("An exception occurred: " +e.Message);
         }
+Console.ReadLine();
   }
 }
 
