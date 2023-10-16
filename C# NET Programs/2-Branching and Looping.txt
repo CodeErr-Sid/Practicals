@@ -1,4 +1,4 @@
-2. Branching And Looping
+12. Branching And Looping
 
 Source Code:
 
@@ -6,7 +6,7 @@ using System;
 					
 public class Program
 {
-	public static void Main()
+	public static void Main(String[] args)
 	{
         for(int i=0; i<10; i++)
         {
