@@ -14,7 +14,7 @@ class Program {
 
         foreach(string day in weekDays)
             Console.Write(day + " ");
-        Console.RedaLine();
+        Console.ReadLine();
   }
 }
 
