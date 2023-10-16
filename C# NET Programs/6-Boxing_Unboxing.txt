@@ -13,7 +13,9 @@ class Program {
  
         System.Console.WriteLine("Value - type value of num is : {0}", num);
         System.Console.WriteLine("Object - type value of obj is : {0}", obj);
-  }
+
+Console.ReadLine();  
+}
 }
 
 Output:
