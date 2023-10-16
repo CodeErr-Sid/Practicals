@@ -17,15 +17,15 @@ namespace ConsoleApplication2
         return x + y;
     }
 
-    // define a delegate
+
     public delegate int myDelegate(int num1, int num2);
 
     public static void Main(string[] args)
     {
-        // create an instance of delegate by passing method name 
+        
         myDelegate d = new myDelegate(calculateSum);
 
-        // calling calculateSum() using delegate
+     
         int result = d(5, 6);
 
         Console.WriteLine(result);
