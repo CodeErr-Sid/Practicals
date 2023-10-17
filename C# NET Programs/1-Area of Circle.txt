@@ -11,6 +11,7 @@ class Circle
         double rad = Convert.ToDouble(Console.ReadLine()); 
         double area = Math.PI * rad * rad; 
         Console.WriteLine("Area of circle is: " + area); 
+        Console.ReadLine();
     } 
 }
 
