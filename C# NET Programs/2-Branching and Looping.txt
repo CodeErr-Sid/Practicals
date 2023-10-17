@@ -15,9 +15,9 @@ public class Program
            goto loopst;
           }
           else{
-           continue;
-          loopst: {break;}
+           continue;          
           }
+          loopst: {break;}
         }
     Console.ReadLine();
 	}
