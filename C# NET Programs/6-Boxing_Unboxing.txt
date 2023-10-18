@@ -9,9 +9,9 @@ class Program {
         int num = 10;
         object obj = num;
 
-        num = 100;
+        int i = (int)obj;
  
-        System.Console.WriteLine("Value - type value of num is : {0}", num);
+        System.Console.WriteLine("Value - type value of num is : {0}", i);
         System.Console.WriteLine("Object - type value of obj is : {0}", obj);
 
 Console.ReadLine();  
