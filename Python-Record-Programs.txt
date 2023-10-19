@@ -1,0 +1,156 @@
+# 1.Basic Control Structures And Loops:
+
+num = int(input("Enter a Positive Number: "))
+rev=0
+while(num>0):
+    digit = num % 10
+    rev = (rev * 10) + digit
+    num = num // 10
+print(f"Reverse of the Number is: {rev}")
+
+output:
+Enter a Positive Number: 123
+Reverse of the Number is: 321
+
+# 2.Operators and IO Operations:
+
+age = int(input("Enter your age: "))
+if(age>18):
+    print("Eligible To Vote!")
+else:
+    print("Not Eligible To Vote.")
+
+output:
+Enter your age: 19
+Eligible To Vote!
+
+# 3.Python Script:
+
+num = input("Enter Any Number: ")
+rev = str(num)[::-1]
+if(num==rev):
+    print("Palindrome")
+else:
+    print("Not a Palindrome")
+
+
+output:
+Enter Any Number: 121
+Palindrome
+
+# 4.List:
+a.)
+
+num_list=[1,2,3,4,5,6,7,8,9]
+sum = sum(num_list)
+avg = sum/len(num_list)
+print(f"Sum is: {sum} \nAverage is: {avg}")
+
+Output:
+Sum is: 45 
+Average is: 5.0
+
+#b.)
+
+num_list=[1,2,3,4,5,6,7,8,9]
+rev = num_list[::-1]
+print(f"Reverse: {rev}")
+
+Output:
+Reverse: [9, 8, 7, 6, 5, 4, 3, 2, 1]
+
+# 5.Strings:
+
+str1 = "john "
+str2 = "is happy"
+
+print(str1+str2)
+print(str1.title())
+print(str1.startswith('t'))
+print(str2.startswith('t'))
+print(str2.split())
+print(str1.strip())
+print(str1.upper())
+
+Output:
+john is happy
+John 
+False
+False
+['is', 'happy']
+john
+JOHN 
+
+# 6.Functions:
+
+a = int(input("Enter a Number: "))
+b = int(input("Enter a Number: "))
+c = int(input("Enter a Number: "))
+
+def MaxofThree(a,b,c):
+    if a>b and a>c:
+        return a
+    elif b>a and b>c:
+        return b
+    else:
+        return c
+
+result = MaxofThree(a,b,c)
+print(f"Maximum of Three is: {result}")
+
+Output:
+Enter a Number: 3
+Enter a Number: 4
+Enter a Number: 8
+Maximum of Three is: 8
+
+# 7.Recursion & Param passing Technique:
+
+def fibo(n):
+    if n <= 1:
+        return 1
+    else:
+        return(fibo(n-1) + fibo(n-2))
+
+terms = int(input("Enter No of Terms: "))
+if(terms <= 0):
+    print("Please enter a positive integer")
+else:
+    print("Fibonacci Series:")
+    for i in range(terms):
+        print(fibo(i))
+
+Output:
+Fibonacci Series:
+1
+1
+2
+3
+
+# 8. Tuples:
+
+my_tuple = (1,2,3,4,5,6,7,8,9,10)
+even_tuple = ([x for x in my_tuple if x%2==0])
+odd_tuple = ([x for x in my_tuple if x%2!=0])
+print(f"Even Tuple: {even_tuple}")
+print(f"Odd Tuple: {odd_tuple}")
+
+output:
+Even Tuple: [2, 4, 6, 8, 10]
+Odd Tuple: [1, 3, 5, 7, 9]
+
+# 10.Exception Handling:
+
+def reciprocal(num):
+    try:
+        reci = 1/num
+    except ZeroDivisionError:
+        print("Cannot divide By zero")
+    else:
+        print(reci)
+reciprocal(4)
+reciprocal(0)
+
+Output:
+0.25
+Cannot divide By zero
