@@ -121,6 +121,7 @@ else:
         print(fibo(i))
 
 Output:
+Enter Terms: 4
 Fibonacci Series:
 1
 1
